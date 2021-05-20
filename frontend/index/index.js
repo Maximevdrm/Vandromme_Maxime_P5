@@ -13,10 +13,10 @@ function produits(){
         for (let ourson of oursons){
             let formattedPrice = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(ourson.price);
             htmlContent +=
-            `<div class="carte_oursons" id="${ourson._id}"><img src="${ourson.imageUrl}" alt="image d\'ourson">
-            <h1> ${ourson.name}</h1>
-            <h2>${formattedPrice}</h2>
-            <p>${ourson.description}</p></div>`;
+            `<a href="./produits/produit.html?id=${ourson._id}" class="carte_oursons" id="${ourson._id}"><img class="ourson_img" src="${ourson.imageUrl}" alt="image d\'ourson">
+            <h1 class="ourson_name"> ${ourson.name}</h1>
+            <h2 class="ourson_price">${formattedPrice}</h2>
+            <p class="ourson_description">${ourson.description}</p></a>`;
             console.log(htmlContent)
         }
         //On implémente dans notre HTML sur la balise avec l'id les_oursons notre boucle

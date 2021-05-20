@@ -1,0 +1,61 @@
+body{
+    width: 90%;
+    margin: auto !important;
+    background-color: #f3e9f1 !important;
+}
+.presentation{
+    text-align: center;
+}
+#les_oursons{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    border-top: solid 2px black;
+    padding: 2% 0 0 0 ;
+}
+
+.ourson_img{
+    width: 50%;
+    margin: auto;
+}
+.carte_oursons{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+}
+#les_oursons a{
+    width: 30%;
+    margin: 1%;
+    box-shadow: black 2px 2px 7px;
+    padding: 1%;
+}
+.ourson_name{
+    color: black;
+}
+.ourson_price{
+    color: black;
+}
+.ourson_description{
+    color: black;
+}
+.navbar img{
+    width: 50%;
+}
+.nav-link{
+    color: black;
+    font-style: unset;
+    font-size: 120%;
+    font-weight: bold;
+}
+.navbar{
+    width: 100%;
+    margin: 0;
+}
+.navbar-expand{
+    justify-content: space-between !important;
+}

@@ -1,0 +1,44 @@
+body{
+    width: 90%;
+    margin: auto !important;
+    background-color: #f3e9f1 !important;
+}
+.navbar img{
+    width: 50%;
+}
+.nav-link{
+    color: black;
+    font-style: unset;
+    font-size: 120%;
+    font-weight: bold;
+}
+.navbar{
+    width: 100%;
+    margin: 0;
+}
+.navbar-expand{
+    justify-content: space-between !important;
+}
+#product{
+    width: 120%;
+    padding: 0 0 0 5%;
+}
+#product img{
+    width: 30%;
+    box-shadow: black 2px 2px 7px;
+}
+#product h1{
+    margin: auto;
+    padding-top: 1%;
+}
+#product h2{
+    font-size: 1.5em;
+}
+#product p{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#ourson_couleur{
+    margin-left: 5%;
+}
