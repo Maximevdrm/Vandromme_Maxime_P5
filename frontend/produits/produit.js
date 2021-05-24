@@ -1,3 +1,5 @@
+var curentProduct;
+
 function getProduct(){
     let searchParams = new URLSearchParams(location.search);
     console.log(searchParams);
@@ -11,6 +13,8 @@ function getProduct(){
     .then(function(ourson){
         console.log(ourson);
         
+        curentProduct = ourson;
+
         let htmlContent = "";
             let formattedPrice = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(ourson.price);
             htmlContent +=
@@ -39,3 +43,20 @@ function getProduct(){
     })
 }
 getProduct();
+
+function addCart(){
+    console.log(curentProduct);
+    
+    let cart = JSON.parse(localStorage.getItem('panier'));
+    console.log(cart);
+    if (cart == null)
+        cart = [];
+    
+    cart.push(curentProduct);
+
+    localStorage.setItem('panier', JSON.stringify(cart));
+
+    document
+        .getElementById("ourson_couleur")
+        .value
+}
