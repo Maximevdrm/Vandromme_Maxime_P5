@@ -37,6 +37,12 @@ function getProduct(){
         document
             .getElementById("ourson_couleur")
             .innerHTML = htmlContent
+
+            htmlContent = 
+            `<input id="quantityOurson" type="number" step="1" min="0"></input>`
+            document
+            .getElementById("quantity")
+            .innerHTML = htmlContent
             
     })
     .catch(function(error){
@@ -51,12 +57,22 @@ function addCart(){
     console.log(cart);
     if (cart == null)
         cart = [];
-    
+
+    let quantityOurson = document.getElementById("quantityOurson").value !="" ? Number(document.getElementById("quantityOurson").value) : 0; //Condition ternaire
+    console.log(quantityOurson);
+
+    curentProduct.quantityOurson = quantityOurson;
+
+    let found=false;
+    for(let ourson of cart){
+        if(ourson._id == curentProduct._id){
+            ourson.quantityOurson += quantityOurson;
+            found = true;
+            break;
+        }
+    }
+    if(!found){
     cart.push(curentProduct);
-
+    }
     localStorage.setItem('panier', JSON.stringify(cart));
-
-    document
-        .getElementById("ourson_couleur")
-        .value
 }

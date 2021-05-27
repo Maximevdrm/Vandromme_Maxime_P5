@@ -1,0 +1,21 @@
+body{
+    width: 90%;
+    margin: auto !important;
+    background-color: #f3e9f1 !important;
+}
+.navbar img{
+    width: 50%;
+}
+.nav-link{
+    color: black;
+    font-style: unset;
+    font-size: 120%;
+    font-weight: bold;
+}
+.navbar{
+    width: 100%;
+    margin: 0;
+}
+.navbar-expand{
+    justify-content: space-between !important;
+}
