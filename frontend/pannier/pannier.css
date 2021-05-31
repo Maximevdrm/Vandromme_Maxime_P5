@@ -19,3 +19,29 @@ body{
 .navbar-expand{
     justify-content: space-between !important;
 }
+#panier{
+    width: 120%;
+    padding: 0 0 0 5%;
+}
+#panier img{
+    width: 30%;
+    box-shadow: black 2px 2px 7px;
+}
+#panier h1{
+    margin: auto;
+    padding-top: 1%;
+}
+#panier h2{
+    font-size: 1.5em;
+}
+#panier p{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#panier p{
+    font-size: 2em;
+    margin-top: 2%;
+    width: 150%;
+    font-weight: bold;
+}
