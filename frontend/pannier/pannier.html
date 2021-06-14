@@ -30,6 +30,73 @@
 
     </section>
 </body>
+<div>
+  <h3>Formulaire de contact</h3>
+      <form name="myForm">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="lastname" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                <tr>
+                  <td>
+                     <label>
+                        Votre prénom <span class="required">*</span>
+                     </label>
+                  </td>
+                  <td>
+                     <input type="text" name="firstname" class="long"/>
+                     <span class="error" id="errorname"></span>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse postale <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="message" class="long"></input>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Votre ville <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="ville" class="long"></input>
+                  <span class="error" id="errorcity"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer" id="boutonEnvoyer">      
+                  <input type="reset" value="Réinitialiser"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+</div>
 <footer>
   <script src="./pannier.js"></script>
 </footer>

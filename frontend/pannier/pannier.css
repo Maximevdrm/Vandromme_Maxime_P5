@@ -20,11 +20,12 @@ body{
     justify-content: space-between !important;
 }
 #panier{
-    width: 120%;
+    width: 70%;
     padding: 0 0 0 5%;
+
 }
 #panier img{
-    width: 30%;
+    width: 20%;
     box-shadow: black 2px 2px 7px;
 }
 #panier h1{
@@ -45,3 +46,40 @@ body{
     width: 150%;
     font-weight: bold;
 }
+h3{
+    text-align: center;
+  }
+  .form-style {
+    margin:10px auto;
+    width: 400px;
+    padding: 20px 12px 10px 20px;
+
+  }
+  .form-style td {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+  }
+  .form-style label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+  }
+  .form-style .required{
+    color:red;
+  }
+  .form-style input[type=submit], .form-style input[type=reset]{
+    background: #4eb5f1;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+  }
+  .form-style .long{
+    width: 100%;
+  }
+  .error{
+    color: #D8000C;
+    background-color: #FFBABA;
+  }
