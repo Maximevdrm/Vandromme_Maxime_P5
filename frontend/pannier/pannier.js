@@ -94,7 +94,6 @@ function validateForm() {
 }
 
 document.getElementById("boutonEnvoyer").addEventListener("click", (evt) => {
-  evt.preventDefault();
   if (validateForm() == true) {
     console.log(firstname);
     const contact = {
@@ -127,8 +126,7 @@ document.getElementById("boutonEnvoyer").addEventListener("click", (evt) => {
       })
       .then((response) => {
         localStorage.setItem("orderId", response.orderId);
-        document.location.href="../resumer/resumer.html";
+        document.location.href = "../resumer/resumer.html";
       });
-      
   }
 });

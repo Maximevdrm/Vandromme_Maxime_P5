@@ -41,7 +41,7 @@
                   </label>
                </td>
                <td>
-                  <input type="text" name="lastname" class="long"/>
+                  <input type="text" name="lastname" class="long" pattern="[a-zA-Z]{1-}" title="Veuillez entré un nom valide"/>
                   <span class="error" id="errorname"></span>
                </td>
             </tr>
@@ -54,7 +54,7 @@
                      </label>
                   </td>
                   <td>
-                     <input type="text" name="firstname" class="long"/>
+                     <input type="text" name="firstname" class="long" pattern="[a-zA-Z]{1-}" title="Veuillez entré un prénom valide"/>
                      <span class="error" id="errorname"></span>
                   <label>
                      Votre adresse e-mail <span class="required">*</span>
@@ -83,7 +83,7 @@
                   </label>
                </td>
                <td>
-                  <input type="text" name="ville" class="long"></input>
+                  <input type="text" name="ville" class="long" pattern="[a-zA-Z]{1-}" title="Veuillez entré une ville valide"></input>
                   <span class="error" id="errorcity"></span>
                </td>
             </tr>
